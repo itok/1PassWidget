@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		574459EF19E44BC0006918C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 574459EE19E44BC0006918C6 /* main.m */; };
+		574459F219E44BC0006918C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 574459F119E44BC0006918C6 /* AppDelegate.m */; };
+		574459F519E44BC0006918C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574459F419E44BC0006918C6 /* ViewController.m */; };
+		574459F819E44BC0006918C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574459F619E44BC0006918C6 /* Main.storyboard */; };
+		574459FA19E44BC0006918C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574459F919E44BC0006918C6 /* Images.xcassets */; };
+		574459FD19E44BC0006918C6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574459FB19E44BC0006918C6 /* LaunchScreen.xib */; };
+		57445A0919E44BC0006918C6 /* _PassWidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57445A0819E44BC0006918C6 /* _PassWidgetTests.m */; };
+		57445A1919E44BFF006918C6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57445A1819E44BFF006918C6 /* NotificationCenter.framework */; };
+		57445A1F19E44BFF006918C6 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57445A1E19E44BFF006918C6 /* TodayViewController.m */; };
+		57445A2119E44BFF006918C6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57445A2019E44BFF006918C6 /* MainInterface.storyboard */; };
+		57445A2419E44BFF006918C6 /* 1Password.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 57445A1619E44BFF006918C6 /* 1Password.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57445A0319E44BC0006918C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574459E119E44BC0006918C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 574459E819E44BC0006918C6;
+			remoteInfo = 1PassWidget;
+		};
+		57445A2219E44BFF006918C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574459E119E44BC0006918C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57445A1519E44BFF006918C6;
+			remoteInfo = 1Password;
+		};
+		57445A2519E44BFF006918C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574459E119E44BC0006918C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57445A1519E44BFF006918C6;
+			remoteInfo = 1Password;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		57445A2A19E44BFF006918C6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				57445A2419E44BFF006918C6 /* 1Password.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		574459E919E44BC0006918C6 /* 1PassWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1PassWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		574459ED19E44BC0006918C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574459EE19E44BC0006918C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		574459F019E44BC0006918C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		574459F119E44BC0006918C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		574459F319E44BC0006918C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		574459F419E44BC0006918C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		574459F719E44BC0006918C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		574459F919E44BC0006918C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		574459FC19E44BC0006918C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		57445A0219E44BC0006918C6 /* 1PassWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1PassWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57445A0719E44BC0006918C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57445A0819E44BC0006918C6 /* _PassWidgetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _PassWidgetTests.m; sourceTree = "<group>"; };
+		57445A1619E44BFF006918C6 /* 1Password.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = 1Password.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		57445A1819E44BFF006918C6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		57445A1C19E44BFF006918C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57445A1D19E44BFF006918C6 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		57445A1E19E44BFF006918C6 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		57445A2019E44BFF006918C6 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		574459E619E44BC0006918C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574459FF19E44BC0006918C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57445A1319E44BFF006918C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57445A1919E44BFF006918C6 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		574459E019E44BC0006918C6 = {
+			isa = PBXGroup;
+			children = (
+				574459EB19E44BC0006918C6 /* 1PassWidget */,
+				57445A0519E44BC0006918C6 /* 1PassWidgetTests */,
+				57445A1A19E44BFF006918C6 /* 1Password */,
+				57445A1719E44BFF006918C6 /* Frameworks */,
+				574459EA19E44BC0006918C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		574459EA19E44BC0006918C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				574459E919E44BC0006918C6 /* 1PassWidget.app */,
+				57445A0219E44BC0006918C6 /* 1PassWidgetTests.xctest */,
+				57445A1619E44BFF006918C6 /* 1Password.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		574459EB19E44BC0006918C6 /* 1PassWidget */ = {
+			isa = PBXGroup;
+			children = (
+				574459F019E44BC0006918C6 /* AppDelegate.h */,
+				574459F119E44BC0006918C6 /* AppDelegate.m */,
+				574459F319E44BC0006918C6 /* ViewController.h */,
+				574459F419E44BC0006918C6 /* ViewController.m */,
+				574459F619E44BC0006918C6 /* Main.storyboard */,
+				574459F919E44BC0006918C6 /* Images.xcassets */,
+				574459FB19E44BC0006918C6 /* LaunchScreen.xib */,
+				574459EC19E44BC0006918C6 /* Supporting Files */,
+			);
+			path = 1PassWidget;
+			sourceTree = "<group>";
+		};
+		574459EC19E44BC0006918C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				574459ED19E44BC0006918C6 /* Info.plist */,
+				574459EE19E44BC0006918C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57445A0519E44BC0006918C6 /* 1PassWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				57445A0819E44BC0006918C6 /* _PassWidgetTests.m */,
+				57445A0619E44BC0006918C6 /* Supporting Files */,
+			);
+			path = 1PassWidgetTests;
+			sourceTree = "<group>";
+		};
+		57445A0619E44BC0006918C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57445A0719E44BC0006918C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57445A1719E44BFF006918C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57445A1819E44BFF006918C6 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57445A1A19E44BFF006918C6 /* 1Password */ = {
+			isa = PBXGroup;
+			children = (
+				57445A1D19E44BFF006918C6 /* TodayViewController.h */,
+				57445A1E19E44BFF006918C6 /* TodayViewController.m */,
+				57445A2019E44BFF006918C6 /* MainInterface.storyboard */,
+				57445A1B19E44BFF006918C6 /* Supporting Files */,
+			);
+			path = 1Password;
+			sourceTree = "<group>";
+		};
+		57445A1B19E44BFF006918C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57445A1C19E44BFF006918C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		574459E819E44BC0006918C6 /* 1PassWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57445A0C19E44BC0006918C6 /* Build configuration list for PBXNativeTarget "1PassWidget" */;
+			buildPhases = (
+				574459E519E44BC0006918C6 /* Sources */,
+				574459E619E44BC0006918C6 /* Frameworks */,
+				574459E719E44BC0006918C6 /* Resources */,
+				57445A2A19E44BFF006918C6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57445A2319E44BFF006918C6 /* PBXTargetDependency */,
+				57445A2619E44BFF006918C6 /* PBXTargetDependency */,
+			);
+			name = 1PassWidget;
+			productName = 1PassWidget;
+			productReference = 574459E919E44BC0006918C6 /* 1PassWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57445A0119E44BC0006918C6 /* 1PassWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57445A0F19E44BC0006918C6 /* Build configuration list for PBXNativeTarget "1PassWidgetTests" */;
+			buildPhases = (
+				574459FE19E44BC0006918C6 /* Sources */,
+				574459FF19E44BC0006918C6 /* Frameworks */,
+				57445A0019E44BC0006918C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57445A0419E44BC0006918C6 /* PBXTargetDependency */,
+			);
+			name = 1PassWidgetTests;
+			productName = 1PassWidgetTests;
+			productReference = 57445A0219E44BC0006918C6 /* 1PassWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57445A1519E44BFF006918C6 /* 1Password */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57445A2719E44BFF006918C6 /* Build configuration list for PBXNativeTarget "1Password" */;
+			buildPhases = (
+				57445A1219E44BFF006918C6 /* Sources */,
+				57445A1319E44BFF006918C6 /* Frameworks */,
+				57445A1419E44BFF006918C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 1Password;
+			productName = 1Password;
+			productReference = 57445A1619E44BFF006918C6 /* 1Password.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		574459E119E44BC0006918C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = itok;
+				TargetAttributes = {
+					574459E819E44BC0006918C6 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					57445A0119E44BC0006918C6 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 574459E819E44BC0006918C6;
+					};
+					57445A1519E44BFF006918C6 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 574459E419E44BC0006918C6 /* Build configuration list for PBXProject "1PassWidget" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 574459E019E44BC0006918C6;
+			productRefGroup = 574459EA19E44BC0006918C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				574459E819E44BC0006918C6 /* 1PassWidget */,
+				57445A0119E44BC0006918C6 /* 1PassWidgetTests */,
+				57445A1519E44BFF006918C6 /* 1Password */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		574459E719E44BC0006918C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574459F819E44BC0006918C6 /* Main.storyboard in Resources */,
+				574459FD19E44BC0006918C6 /* LaunchScreen.xib in Resources */,
+				574459FA19E44BC0006918C6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57445A0019E44BC0006918C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57445A1419E44BFF006918C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57445A2119E44BFF006918C6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		574459E519E44BC0006918C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574459F519E44BC0006918C6 /* ViewController.m in Sources */,
+				574459F219E44BC0006918C6 /* AppDelegate.m in Sources */,
+				574459EF19E44BC0006918C6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574459FE19E44BC0006918C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57445A0919E44BC0006918C6 /* _PassWidgetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57445A1219E44BFF006918C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57445A1F19E44BFF006918C6 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57445A0419E44BC0006918C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 574459E819E44BC0006918C6 /* 1PassWidget */;
+			targetProxy = 57445A0319E44BC0006918C6 /* PBXContainerItemProxy */;
+		};
+		57445A2319E44BFF006918C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57445A1519E44BFF006918C6 /* 1Password */;
+			targetProxy = 57445A2219E44BFF006918C6 /* PBXContainerItemProxy */;
+		};
+		57445A2619E44BFF006918C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57445A1519E44BFF006918C6 /* 1Password */;
+			targetProxy = 57445A2519E44BFF006918C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		574459F619E44BC0006918C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				574459F719E44BC0006918C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		574459FB19E44BC0006918C6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				574459FC19E44BC0006918C6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57445A0A19E44BC0006918C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		57445A0B19E44BC0006918C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57445A0D19E44BC0006918C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 1PassWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		57445A0E19E44BC0006918C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = 1PassWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		57445A1019E44BC0006918C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = 1PassWidgetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/1PassWidget.app/1PassWidget";
+			};
+			name = Debug;
+		};
+		57445A1119E44BC0006918C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = 1PassWidgetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/1PassWidget.app/1PassWidget";
+			};
+			name = Release;
+		};
+		57445A2819E44BFF006918C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = 1Password/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		57445A2919E44BFF006918C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = 1Password/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		574459E419E44BC0006918C6 /* Build configuration list for PBXProject "1PassWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57445A0A19E44BC0006918C6 /* Debug */,
+				57445A0B19E44BC0006918C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57445A0C19E44BC0006918C6 /* Build configuration list for PBXNativeTarget "1PassWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57445A0D19E44BC0006918C6 /* Debug */,
+				57445A0E19E44BC0006918C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		57445A0F19E44BC0006918C6 /* Build configuration list for PBXNativeTarget "1PassWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57445A1019E44BC0006918C6 /* Debug */,
+				57445A1119E44BC0006918C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		57445A2719E44BFF006918C6 /* Build configuration list for PBXNativeTarget "1Password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57445A2819E44BFF006918C6 /* Debug */,
+				57445A2919E44BFF006918C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 574459E119E44BC0006918C6 /* Project object */;
+}
